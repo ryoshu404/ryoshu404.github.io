@@ -11,14 +11,14 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:        #0a0a0c;
-      --bg-2:      #111115;
-      --bg-3:      #18181e;
-      --border:    rgba(255,255,255,0.07);
-      --text:      #e8e8ee;
-      --muted:     #6b6b80;
-      --accent:    #e8642a;
-      --accent-2:  #f0874f;
+      --bg:        #0d0d10;
+      --bg-2:      #14141a;
+      --bg-3:      #1c1c24;
+      --border:    rgba(255,255,255,0.1);
+      --text:      #f0f0f5;
+      --muted:     #8888a0;
+      --accent:    #7dd4c0;
+      --accent-2:  #a0e4d4;
       --mono:      'IBM Plex Mono', monospace;
       --sans:      'Syne', sans-serif;
     }
@@ -29,8 +29,8 @@
       background: var(--bg);
       color: var(--text);
       font-family: var(--sans);
-      font-size: 16px;
-      line-height: 1.6;
+      font-size: 17px;
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
@@ -62,7 +62,7 @@
 
     .nav-logo {
       font-family: var(--mono);
-      font-size: 0.85rem;
+      font-size: 0.95rem;
       color: var(--accent);
       letter-spacing: 0.08em;
       text-decoration: none;
@@ -76,7 +76,7 @@
 
     .nav-links a {
       font-family: var(--mono);
-      font-size: 0.78rem;
+      font-size: 0.88rem;
       color: var(--muted);
       text-decoration: none;
       letter-spacing: 0.06em;
@@ -114,13 +114,13 @@
       right: -10%;
       width: 500px;
       height: 500px;
-      background: radial-gradient(circle, rgba(232,100,42,0.06) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(125,212,192,0.06) 0%, transparent 70%);
       pointer-events: none;
     }
 
     .home-tag {
       font-family: var(--mono);
-      font-size: 0.78rem;
+      font-size: 0.88rem;
       color: var(--accent);
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -149,11 +149,11 @@
     h1 .dim { color: var(--muted); }
 
     .home-body {
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       color: var(--muted);
       max-width: 540px;
       margin-bottom: 2.5rem;
-      line-height: 1.75;
+      line-height: 1.8;
     }
 
     .home-body strong { color: var(--text); font-weight: 600; }
@@ -168,10 +168,10 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.65rem 1.4rem;
+      padding: 0.7rem 1.5rem;
       border-radius: 4px;
       font-family: var(--mono);
-      font-size: 0.8rem;
+      font-size: 0.88rem;
       letter-spacing: 0.05em;
       text-decoration: none;
       transition: all 0.2s;
@@ -217,14 +217,14 @@
 
     .meta-label {
       font-family: var(--mono);
-      font-size: 0.68rem;
+      font-size: 0.75rem;
       color: var(--muted);
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
 
     .meta-value {
-      font-size: 0.88rem;
+      font-size: 0.95rem;
       color: var(--text);
     }
 
@@ -238,7 +238,7 @@
 
     .section-num {
       font-family: var(--mono);
-      font-size: 0.72rem;
+      font-size: 0.82rem;
       color: var(--accent);
       letter-spacing: 0.08em;
     }
@@ -268,9 +268,9 @@
 
     .about-text p {
       color: var(--muted);
-      line-height: 1.8;
+      line-height: 1.85;
       margin-bottom: 1rem;
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
 
     .about-text p strong { color: var(--text); }
@@ -290,7 +290,7 @@
 
     .sidebar-block-label {
       font-family: var(--mono);
-      font-size: 0.68rem;
+      font-size: 0.75rem;
       color: var(--accent);
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -305,7 +305,7 @@
 
     .tag {
       font-family: var(--mono);
-      font-size: 0.72rem;
+      font-size: 0.78rem;
       padding: 0.25rem 0.6rem;
       border-radius: 3px;
       background: var(--bg-3);
@@ -322,7 +322,7 @@
 
     .cert-item {
       font-family: var(--mono);
-      font-size: 0.78rem;
+      font-size: 0.84rem;
       color: var(--text);
       display: flex;
       align-items: center;
@@ -332,7 +332,7 @@
     .cert-item::before {
       content: '▸';
       color: var(--accent);
-      font-size: 0.65rem;
+      font-size: 0.7rem;
     }
 
     /* ── Projects ── */
@@ -364,7 +364,7 @@
     }
 
     .project-card:hover {
-      border-color: rgba(232,100,42,0.3);
+      border-color: rgba(125,212,192,0.3);
       transform: translateX(4px);
     }
 
@@ -403,7 +403,7 @@
 
     .badge {
       font-family: var(--mono);
-      font-size: 0.65rem;
+      font-size: 0.72rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       padding: 0.2rem 0.55rem;
@@ -417,9 +417,9 @@
     }
 
     .badge-progress {
-      background: rgba(232,100,42,0.12);
+      background: rgba(125,212,192,0.12);
       color: var(--accent-2);
-      border: 1px solid rgba(232,100,42,0.2);
+      border: 1px solid rgba(125,212,192,0.2);
     }
 
     .badge-planned {
@@ -430,15 +430,15 @@
 
     .project-lang {
       font-family: var(--mono);
-      font-size: 0.72rem;
+      font-size: 0.8rem;
       color: var(--muted);
       white-space: nowrap;
     }
 
     .project-desc {
       color: var(--muted);
-      font-size: 0.9rem;
-      line-height: 1.7;
+      font-size: 0.97rem;
+      line-height: 1.75;
       margin-bottom: 1.25rem;
     }
 
@@ -451,7 +451,7 @@
 
     .project-link {
       font-family: var(--mono);
-      font-size: 0.75rem;
+      font-size: 0.82rem;
       color: var(--accent);
       text-decoration: none;
       letter-spacing: 0.04em;
@@ -488,7 +488,7 @@
     }
 
     .contact-card:hover {
-      border-color: rgba(232,100,42,0.3);
+      border-color: rgba(125,212,192,0.3);
       background: var(--bg-3);
     }
 
@@ -506,7 +506,7 @@
 
     .contact-label {
       font-family: var(--mono);
-      font-size: 0.68rem;
+      font-size: 0.75rem;
       color: var(--muted);
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -514,7 +514,7 @@
     }
 
     .contact-value {
-      font-size: 0.85rem;
+      font-size: 0.92rem;
       color: var(--text);
     }
 
@@ -527,7 +527,7 @@
 
     .footer-text {
       font-family: var(--mono);
-      font-size: 0.72rem;
+      font-size: 0.78rem;
       color: var(--muted);
       letter-spacing: 0.04em;
     }
