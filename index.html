@@ -98,8 +98,8 @@
       transform: translateY(0);
     }
 
-    /* ── Hero ── */
-    #hero {
+    /* ── home ── */
+    #home {
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -107,7 +107,7 @@
       position: relative;
     }
 
-    #hero::after {
+    #home::after {
       content: '';
       position: absolute;
       top: 20%;
@@ -118,7 +118,7 @@
       pointer-events: none;
     }
 
-    .hero-tag {
+    .home-tag {
       font-family: var(--mono);
       font-size: 0.78rem;
       color: var(--accent);
@@ -130,7 +130,7 @@
       gap: 0.6rem;
     }
 
-    .hero-tag::before {
+    .home-tag::before {
       content: '';
       display: inline-block;
       width: 20px;
@@ -148,7 +148,7 @@
 
     h1 .dim { color: var(--muted); }
 
-    .hero-body {
+    .home-body {
       font-size: 1.05rem;
       color: var(--muted);
       max-width: 540px;
@@ -156,9 +156,9 @@
       line-height: 1.75;
     }
 
-    .hero-body strong { color: var(--text); font-weight: 600; }
+    .home-body strong { color: var(--text); font-weight: 600; }
 
-    .hero-actions {
+    .home-actions {
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
@@ -200,7 +200,7 @@
       border-color: rgba(255,255,255,0.2);
     }
 
-    .hero-meta {
+    .home-meta {
       display: flex;
       gap: 2rem;
       margin-top: 3.5rem;
@@ -538,25 +538,25 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    #hero .container > * {
+    #home .container > * {
       animation: fadeUp 0.7s ease both;
     }
 
-    #hero .hero-tag   { animation-delay: 0.1s; }
-    #hero h1          { animation-delay: 0.2s; }
-    #hero .hero-body  { animation-delay: 0.3s; }
-    #hero .hero-actions { animation-delay: 0.4s; }
-    #hero .hero-meta  { animation-delay: 0.5s; }
+    #home .home-tag   { animation-delay: 0.1s; }
+    #home h1          { animation-delay: 0.2s; }
+    #home .home-body  { animation-delay: 0.3s; }
+    #home .home-actions { animation-delay: 0.4s; }
+    #home .home-meta  { animation-delay: 0.5s; }
 
-    /* make hero always visible since it's above the fold */
-    #hero { opacity: 1; transform: none; }
+    /* make home always visible since it's above the fold */
+    #home { opacity: 1; transform: none; }
   </style>
 </head>
 <body>
 
   <!-- Nav -->
   <nav>
-    <a class="nav-logo" href="#hero">ryoshu404</a>
+    <a class="nav-logo" href="#home">ryoshu404</a>
     <ul class="nav-links">
       <li><a href="#about">about</a></li>
       <li><a href="#projects">projects</a></li>
@@ -564,22 +564,22 @@
     </ul>
   </nav>
 
-  <!-- Hero -->
-  <section id="hero">
+  <!-- home -->
+  <section id="home">
     <div class="container">
-      <div class="hero-tag">Security Software Engineer</div>
+      <div class="home-tag">Security Software Engineer</div>
       <h1>Building tools<br><span class="dim">at the edge of</span><br>detection.</h1>
-      <p class="hero-body">
+      <p class="home-body">
         <strong>6+ years</strong> of cyber operations — malware analysis, incident response, SIGINT. 
         Transitioning into security software engineering with a focus on 
         <strong>endpoint security</strong>, <strong>detection engineering</strong>, and 
         <strong>macOS platform security</strong>.
       </p>
-      <div class="hero-actions">
+      <div class="home-actions">
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="https://github.com/ryoshu404" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
       </div>
-      <div class="hero-meta">
+      <div class="home-meta">
         <div class="meta-item">
           <span class="meta-label">Clearance</span>
           <span class="meta-value">TS/SCI (Active)</span>
@@ -822,7 +822,7 @@
 
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Intersection observer for scroll-triggered section reveals
-    const sections = document.querySelectorAll('section:not(#hero)');
+    const sections = document.querySelectorAll('section:not(#home)');
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(e => {
