@@ -734,9 +734,10 @@
             <span class="project-lang">Go</span>
           </div>
           <p class="project-desc">
-            Threat intelligence pipeline that ingests public IOC feeds, normalizes indicators, 
-            exposes a query API, and optionally generates detection rule stubs. Designed to 
-            consume Statica's extracted IOC output for end-to-end enrichment.
+            Threat intelligence pipeline that ingests public IOC feeds (AlienVault OTX, abuse.ch, 
+            URLhaus), normalizes and stores indicators, correlates across sources for confidence 
+            scoring, and generates detection rule stubs from high-confidence IOCs. Includes an 
+            LLM-powered triage summary of emerging threat patterns.
           </p>
           <div class="project-features">
             <span class="tag">Threat Feed Ingestion</span>
