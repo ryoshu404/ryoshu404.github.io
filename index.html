@@ -645,6 +645,36 @@
       </div>
       <div class="projects-grid">
 
+        <!-- pydetect -->
+        <div class="project-card upcoming">
+          <div class="project-header">
+            <div class="project-title-row">
+              <span class="project-name">pydetect</span>
+              <span class="badge badge-shipped">Shipped v1.0</span>
+            </div>
+            <span class="project-lang">Python · Sigma</span>
+          </div>
+          <p class="project-desc">
+            Detection-as-code repository covering Sigma rules organized by attacker TTP across endpoint logs, host syscalls, and Defender XDR. Python pytest harness with per-framework adapters generates tests from rule files; collection-time fixture validation makes it structurally impossible to ship a rule without its tests. GitHub Actions CI gates every commit. Per-rule decision docs capture threat model and false-positive profile.
+          </p>
+          <div class="project-features">
+            <span class="tag">Sigma Rules</span>
+           <!-- <span class="tag">Falco Rules</span>
+            <span class="tag">KQL Rules</span> -->
+            <span class="tag">Pytest Harness</span>
+            <span class="tag">Decision Docs</span>
+            <span class="tag">GitHub Actions CI</span>
+            <span class="tag">TTP-Cluster Authorship</span>
+            <span class="tag">Synthetic KQL Evaluator</span>
+          </div>
+          <a href="https://github.com/ryoshu404/pydetect" target="_blank" rel="noopener" class="project-link">
+            View on GitHub
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M2 10L10 2M10 2H4M10 2v6"/>
+            </svg>
+          </a>
+        </div>
+        
         <!-- Statica -->
         <div class="project-card">
           <div class="project-header">
@@ -701,25 +731,21 @@
         <div class="project-card upcoming">
           <div class="project-header">
             <div class="project-title-row">
-              <span class="project-name">pydetect</span>
+              <span class="project-name">intelextract</span>
               <span class="badge badge-shipped">Shipped v1.0</span>
             </div>
-            <span class="project-lang">Python · Sigma</span>
+            <span class="project-lang">Python · Anthropic API</span>
           </div>
           <p class="project-desc">
-            Detection-as-code repository covering Sigma rules organized by attacker TTP across endpoint logs, host syscalls, and Defender XDR. Python pytest harness with per-framework adapters generates tests from rule files; collection-time fixture validation makes it structurally impossible to ship a rule without its tests. GitHub Actions CI gates every commit. Per-rule decision docs capture threat model and false-positive profile.
+            Python CLI that converts unstructured threat-research text into deterministic structured threat intelligence via the Anthropic API. Pydantic schema serves as single source of truth — generates the tool's input_schema and validates the response, eliminating drift between API contract and parser. Forced tool-use on every call; malformed model output raises explicit ValidationError. Source provenance and extraction metadata included in the output envelope.
           </p>
           <div class="project-features">
-            <span class="tag">Sigma Rules</span>
-           <!-- <span class="tag">Falco Rules</span>
-            <span class="tag">KQL Rules</span> -->
-            <span class="tag">Pytest Harness</span>
-            <span class="tag">Decision Docs</span>
-            <span class="tag">GitHub Actions CI</span>
-            <span class="tag">TTP-Cluster Authorship</span>
-            <span class="tag">Synthetic KQL Evaluator</span>
+            <span class="tag">Anthropic API</span>
+            <span class="tag">ATT&CK Extraction</span>
+            <span class="tag">IOC Extraction</span>
+            <span class="tag">Full Test Coverage</span>
           </div>
-          <a href="https://github.com/ryoshu404/pydetect" target="_blank" rel="noopener" class="project-link">
+          <a href="https://github.com/ryoshu404/intelextract" target="_blank" rel="noopener" class="project-link">
             View on GitHub
             <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
               <path d="M2 10L10 2M10 2H4M10 2v6"/>
